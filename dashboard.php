@@ -58,13 +58,14 @@ if(!isset($_SESSION['username'])) header("Location: login14.php?msg=Please login
 </head>
 <body>
 <div class="box">
-    <h2>👤 Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
-    <a href="create_event14.php">➕ Add Event</a>
-    <a href="read_events14.php">📋 View Events</a>
+    <h2> Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
+    <a href="create_event14.php"> Add Event</a>
+    <a href="read_events14.php"> View Events</a>
     <?php if(isset($_SESSION['role']) && $_SESSION['role']=='admin'): ?>
         <a href="admin_dashboard14.php" class="admin-link">🛠 Admin Dashboard</a>
     <?php endif; ?>
-    <a href="logout14.php">🚪 Logout</a>
+    <a href="logout14.php"> Logout</a>
 </div>
 </body>
 </html>
+
